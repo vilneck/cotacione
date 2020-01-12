@@ -1,0 +1,7 @@
+<app-header></app-header>
+<app-search (searchInputEvent)="filterSymbols($event)"></app-search>
+<section class="container">
+ <app-album-list [symbols]="filteredSymbols"></app-album-list>
+ <div>Total de Registros: {{this.filteredSymbols.length}}</div>
+</section>
+

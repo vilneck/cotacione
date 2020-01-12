@@ -1,0 +1,21 @@
+<app-header></app-header>
+<section class="container">
+ <button mat-flat-button color="primary" routerLink="/" aria-label="Voltar">
+ <mat-icon>keyboard_arrow_left</mat-icon> Voltar
+ </button>
+ 
+ <mat-card>
+ <mat-card-content>
+ <h4>Símbolo: {{ this.symbolId }}</h4>
+ <h4>Preço Atual: {{ precoAtual.price | currency:'BRL':true}}</h4>
+
+ </mat-card-content>
+ <mat-card-footer>
+     <div style="margin: 20px;">
+         <button mat-flat-button color="primary" (click)="favoritar()">
+         <mat-icon class="mat-18">{{this.icone}}</mat-icon> {{this.textoBotao}}         
+         </button>
+     </div>
+ </mat-card-footer>
+ </mat-card>
+</section>

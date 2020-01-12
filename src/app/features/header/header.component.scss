@@ -1,0 +1,12 @@
+.appHeader {
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+   }
+   .alinha{
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
